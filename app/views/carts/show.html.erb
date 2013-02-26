@@ -1,4 +1,7 @@
 
+
+
+<%= render @cart %>
 <!--
 <p id="notice"><%= notice %></p>
 
@@ -6,10 +9,13 @@
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %>
 -->
-
+<!--
 <div class="cart_title"> Your Cart </div>
 <table>
 	<% @cart.line_items.each do |item| %>
+	<%= render(@cart.line_items)%>
+-->
+	<!--
 	<tr>
 		<td><%= item.quantity %>&times;</td>
 		<td><%= item.product.title %></td>
@@ -17,7 +23,8 @@
 	</tr>
 
 	<% end %>
-
+    -->
+<!--
 	<tr class="total_line">
 		<td colspan="2"> Total </td>
 		<td class="total_cell"><%= number_to_currency(@cart.total_price)%></td>
@@ -26,7 +33,7 @@
 </table>
 
 <%= button_to 'Empty cart', @cart, :method => :delete, :confirm => 'Are you Sure?'%>
-
+-->
 <!--
 <h2>Your Pragmatic Cart</h2>
 <ul>
