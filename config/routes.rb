@@ -7,7 +7,9 @@ ShopOnSHA::Application.routes.draw do
 
   resources :carts
 
-  get "store/index"
+  root :to => "store#index", :as => "store"
+
+  #get "store/index"
 
   resources :products do 
     get :who_bought, :on => :member
