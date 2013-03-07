@@ -16,6 +16,84 @@
 #---
 # encoding: utf-8
 Product.delete_all
+Product.create(:title => 'Schwinn Men\'s Prelude Bicycle(BBWhite)' ,
+  :description => 
+    %{<p>
+        <em>Schwinn Men\'s Prelude Bicycle(BBWhite)</em> is men's commuter road bike
+        with aluminum drop bar frame and Schwinn road fork. 14 speed Shimano drivetrain
+        with A050 road shifters.
+      </p>},
+  :image_url =>   'shbike.jpg',    
+  :price => 253.85)
+
+Product.create(:title => 'TAG Heuer Men\'s CAN1010BA0821 Aquaracer Chronograph Watch',
+  :description => 
+    %{<p>
+        <em>TAG Heuer Men\'s CAN1010BA0821</em> is Quartz movement, made from Scratch resistant 
+        crystal and also contains Case diameter of 44.5 mm.
+      </p>},
+  :image_url =>   'tagwatch.jpg',    
+  :price => 1600)
+
+Product.create(:title => 'Furinno 11192B Efficient Computer Desk, Black/Grey',
+  :description => 
+    %{<p>
+        <em>Furinno 11192B Efficient Computer Desk, Black/Grey</em> Simple stylish design
+        yet functional and suitable for any room that has limited space for a computer. Some of
+        the features are cpu storeage shelf, elevated shelf for a compact printer or other 
+        stationary decor. 
+      </p>},
+  :image_url =>   'desk.jpg',    
+  :price => 39.75)
+
+Product.create(:title => 'Ikea Orgel Vreten Floor Lamp, Natural, steel',
+  :description => 
+    %{<p>
+        <em>Ikea Orgel Vreten Floor Lamp, Natural, steel</em> with a shade of handmade
+        paper in which each paper is unique. Gives a mood light. 
+      </p>},
+  :image_url =>   'lamp.jpg',    
+  :price => 29.00)
+
+Product.create(:title => 'Boss P126DVC Phantom 12-Inch Subwoofer',
+  :description => 
+    %{<p>
+        <em>Boss P126DVC Phantom 12-Inch Subwoofer</em> PHANTOM 12 DVC Subwoofer, 
+        Poly Injection Cone Dual 4-Ohm Voice Coils, 2300W. 
+      </p>},
+  :image_url =>   'boss.jpg',    
+  :price => 55.00)
+
+Product.create(:title => 'Tetra 29137 WaterWonders Aquarium Cube',
+  :description => 
+    %{<p>
+        <em>Tetra 29137 WaterWonders Aquarium Cube</em> Easy, safe and fun
+        aquarium designed for beginners. Clear, resilient acrylic tank offers
+        beautiful underwater view. Completely equipped for instant setup.  
+      </p>},
+  :image_url =>   'aquarium.jpg',    
+  :price => 20.99)
+
+Product.create(:title => 'T19 Tqw11733ZVH David Yurman Inspired Checkerboard Champagne Fashion Ring',
+  :description => 
+    %{<p>
+        <em>T19 Tqw11733ZVH David Yurman Inspired Checkerboard Champagne Fashion Ring</em> Lifetime warranty
+        and non tarnishing Rhodium Silver Finish. Beautiful Checkerboard Faceted Champagne Stone.  
+      </p>},
+  :image_url =>   'ring.jpg',    
+  :price => 23.95)
+
+Product.create(:title => 'Tommy Hilfiger Mens Ranger Passcase',
+  :description => 
+    %{<p>
+        <em>Tommy Hilfiger Mens Ranger Passcase</em> is 100% cowhide leather with a leather 
+        frame. It features a handsome embossed logo, leather frame id window and a removable 
+        pass holder for convenience. Do not machine wash.   
+      </p>},
+  :image_url =>   'tommy.jpg',    
+  :price => 42.00)
+
+
 Product.create(:title => 'Web Design for Developers',
   :description => 
     %{<p>

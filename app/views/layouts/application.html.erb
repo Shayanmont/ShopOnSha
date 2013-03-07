@@ -9,7 +9,7 @@
 </head>
 <body id="store">
 	<div id="banner">
-		<%= image_tag("logo.png") %>
+		<%= image_tag("logo.jpg") %>
 		<%= @page_title || "ShopOnSHA Online Store"%>
 	</div>
 
@@ -20,11 +20,10 @@
 					<%= render @cart %>
 				<% end %>
 			<% end %> 
-				
-			<a href="http://www....">Home</a><br />
-			<a href="http://www..../faq">Questions</a><br />
-			<a href="http://www..../news">News</a><br />
-			<a href="http://www..../contact">Contact</a><br />
+			
+			<a href="http://localhost:3000/">Home</a><br />
+			<a href="http://localhost:3000/orders/">Orders</a><br />
+			<a href="http://localhost:3000/products/">Products</a><br />
 		</div>
 
 		<div id="main">
