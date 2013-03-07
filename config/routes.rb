@@ -7,9 +7,8 @@ ShopOnSHA::Application.routes.draw do
 
   resources :carts
 
-  root :to => "store#index", :as => "store"
 
-  #get "store/index"
+  get "store/index"
 
   resources :products do 
     get :who_bought, :on => :member
@@ -65,10 +64,11 @@ ShopOnSHA::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "store#index", :as => "store"
+  root :to => "store#index"
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-#end
+end
