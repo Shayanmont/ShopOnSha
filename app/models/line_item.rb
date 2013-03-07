@@ -10,6 +10,6 @@ class LineItem < ActiveRecord::Base
   end
 
   def sales_tax
-  	5 * product.price / 100 * quantity
+  	(5 * product.price / 100) * quantity
   end
 end
