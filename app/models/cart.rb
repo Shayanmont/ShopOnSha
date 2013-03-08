@@ -22,6 +22,6 @@ class Cart < ActiveRecord::Base
 
   def sales_tax
     #line_items.to_a.sum {|item| item.sales_tax}
-    (5 * total_price)/100)
+    (5 * Cart.total_price)/100)
   end
 end
